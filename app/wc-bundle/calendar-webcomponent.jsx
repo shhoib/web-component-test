@@ -7,7 +7,7 @@ import WebComponent from "../components/Web-component";
 class CalendarElement extends HTMLElement {
   connectedCallback() {
     // (Optional) Shadow DOM – remove if you want global Tailwind styles
-    const mountPoint = this.attachShadow({ mode: "open" });
+    const mountPoint = this;
 
     this.root = ReactDOM.createRoot(mountPoint);
 

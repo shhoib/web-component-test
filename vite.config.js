@@ -10,7 +10,7 @@ export default defineConfig({
       fileName: "calendar-webcomponent",
       name: "CalendarWebComponent",
     },
-    outDir: "public", // Output to public folder so it's accessible on Vercel
+    outDir: "dist", // Default Vite output directory
     rollupOptions: {
       external: ["react", "react-dom", "react/jsx-runtime"],
     },

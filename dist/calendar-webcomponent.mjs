@@ -1,12 +1,12 @@
-import { jsx as oS } from "react/jsx-runtime";
+import { jsxs as FT, jsx as oS } from "react/jsx-runtime";
 import D2 from "react";
 import O2 from "react-dom";
-function FT(L) {
+function kT(L) {
   return L && L.__esModule && Object.prototype.hasOwnProperty.call(L, "default") ? L.default : L;
 }
 var _g = { exports: {} }, np = {}, Hg = { exports: {} }, cS = {};
 var S2;
-function kT() {
+function IT() {
   return S2 || (S2 = 1, (function(L) {
     function zl(O, Q) {
       var V = O.length;
@@ -227,7 +227,7 @@ function kT() {
 }
 var iS = {};
 var b2;
-function IT() {
+function PT() {
   return b2 || (b2 = 1, (function(L) {
     process.env.NODE_ENV !== "production" && (function() {
       function zl() {
@@ -451,10 +451,10 @@ function IT() {
 }
 var T2;
 function M2() {
-  return T2 || (T2 = 1, process.env.NODE_ENV === "production" ? Hg.exports = kT() : Hg.exports = IT()), Hg.exports;
+  return T2 || (T2 = 1, process.env.NODE_ENV === "production" ? Hg.exports = IT() : Hg.exports = PT()), Hg.exports;
 }
 var E2;
-function PT() {
+function t3() {
   if (E2) return np;
   E2 = 1;
   var L = M2(), zl = D2, ml = O2;
@@ -10228,7 +10228,7 @@ Error generating stack: ` + i.message + `
 }
 var up = {};
 var A2;
-function t3() {
+function e3() {
   return A2 || (A2 = 1, process.env.NODE_ENV !== "production" && (function() {
     function L(t, e) {
       for (t = t.memoizedState; t !== null && 0 < e; )
@@ -27273,7 +27273,7 @@ You might need to use a local HTTP server (instead of file://): https://react.de
   })()), up;
 }
 var z2;
-function e3() {
+function l3() {
   if (z2) return _g.exports;
   z2 = 1;
   function L() {
@@ -27287,20 +27287,23 @@ function e3() {
       }
     }
   }
-  return process.env.NODE_ENV === "production" ? (L(), _g.exports = PT()) : _g.exports = t3(), _g.exports;
+  return process.env.NODE_ENV === "production" ? (L(), _g.exports = t3()) : _g.exports = e3(), _g.exports;
 }
-var l3 = e3();
-const a3 = /* @__PURE__ */ FT(l3), n3 = () => /* @__PURE__ */ oS("div", { className: "flex justify-center items-center h-screen", children: /* @__PURE__ */ oS("div", { className: "bg-red-500 h-40 w-40" }) });
-class u3 extends HTMLElement {
+var a3 = l3();
+const n3 = /* @__PURE__ */ kT(a3), u3 = () => /* @__PURE__ */ FT("div", { className: "flex justify-center items-center h-screen", children: [
+  /* @__PURE__ */ oS("div", { className: "bg-red-500 h-40 w-40" }),
+  /* @__PURE__ */ oS("div", { className: "bg-yellow-500 h-40 w-40" })
+] });
+class c3 extends HTMLElement {
   connectedCallback() {
-    const zl = this.attachShadow({ mode: "open" });
-    this.root = a3.createRoot(zl), this.renderComponent();
+    const zl = this;
+    this.root = n3.createRoot(zl), this.renderComponent();
   }
   renderComponent() {
-    this.root.render(/* @__PURE__ */ oS(n3, {}));
+    this.root.render(/* @__PURE__ */ oS(u3, {}));
   }
   disconnectedCallback() {
     this.root && this.root.unmount();
   }
 }
-customElements.get("calendar-webcomponent") || customElements.define("calendar-webcomponent", u3);
+customElements.get("calendar-webcomponent") || customElements.define("calendar-webcomponent", c3);
