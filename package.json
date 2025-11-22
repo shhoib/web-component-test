@@ -15,6 +15,7 @@
     "react-to-webcomponent": "^2.0.1"
   },
   "devDependencies": {
+    "@r2wc/react-to-web-component": "^2.1.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
