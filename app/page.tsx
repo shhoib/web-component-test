@@ -1,3 +1,5 @@
+import CalendarUI from "./components/CalendarUI";
+
 export default function Home() {
-  return <></>;
+  return <><CalendarUI /></>;
 }
